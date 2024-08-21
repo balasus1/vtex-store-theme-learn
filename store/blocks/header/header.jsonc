@@ -16,12 +16,7 @@
     "children": ["telemarketing"],
     "props": {
       "blockClass": "telemarketing",
-      "horizontalAlign": "right",
-      "verticalAlign": "right",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true,
-      "width":"grow"
+      "fullWidth": true
     }
   },
   "flex-layout.row#2-desktop": {
@@ -39,7 +34,10 @@
       "flex-layout.col#spacer",
       "search-bar",
       "locale-switcher",
-      "minicart.v2"
+      "minicart.v2",
+      "notification",
+      "login",
+      "telemarketing"
     ]
   },
   "flex-layout.row#3-menu-desktop": {
