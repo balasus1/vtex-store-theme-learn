@@ -16,7 +16,12 @@
     "children": ["telemarketing"],
     "props": {
       "blockClass": "telemarketing",
-      "fullWidth": true
+      "horizontalAlign": "right",
+      "verticalAlign": "right",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "width":"grow"
     }
   },
   "flex-layout.row#2-desktop": {
