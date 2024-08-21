@@ -1,17 +1,25 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
-    "blocks": ["header-layout.desktop"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop"
+      "flex-layout.row#1-desktop-telemarketing",
+      "flex-layout.row#2-desktop",
+      "flex-layout.row#3-menu-desktop"
     ]
   },
-
-  "flex-layout.row#1-desktop": {
+  "flex-layout.row#1-desktop-telemarketing": {
+    "children": ["telemarketing"],
+    "props": {
+      "blockClass": "telemarketing",
+      "fullWidth": true
+    }
+  },
+  "flex-layout.row#2-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "left",
@@ -28,6 +36,20 @@
       "locale-switcher",
       "minicart.v2"
     ]
+  },
+  "flex-layout.row#3-menu-desktop": {
+    "props": {
+      "blockClass": "menu-link",
+      "paddingTop": 6,
+      "paddingBottom": 3,
+      "horizontalAlign": "left",
+      "verticalAlign": "middle",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "width":"grow"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "flex-layout.col#spacer": {
     "props": {
