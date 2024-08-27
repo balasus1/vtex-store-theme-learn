@@ -7,19 +7,11 @@
   },
   "header-layout.desktop": {
     "children": [
-      "flex-layout.row#1-desktop-telemarketing",
-      "flex-layout.row#2-desktop",
-      "flex-layout.row#3-menu-desktop"
+      "flex-layout.row#1-desktop",
+      "flex-layout.row#2-menu-desktop"
     ]
   },
-  "flex-layout.row#1-desktop-telemarketing": {
-    "children": ["telemarketing"],
-    "props": {
-      "blockClass": "telemarketing",
-      "fullWidth": true
-    }
-  },
-  "flex-layout.row#2-desktop": {
+  "flex-layout.row#1-desktop": {
     "props": {
       "blockClass": "main-header",
       "horizontalAlign": "left",
@@ -27,7 +19,9 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "width":"grow"
+      "width":"grow",
+      "backgroundColor":"#000000",
+      "textColor":"#FFFFFF"
     },
     "children": [
       "flex-layout.col#logo-desktop",
@@ -35,12 +29,10 @@
       "search-bar",
       "locale-switcher",
       "minicart.v2",
-      "notification",
-      "login",
-      "telemarketing"
+      "login"
     ]
   },
-  "flex-layout.row#3-menu-desktop": {
+  "flex-layout.row#2-menu-desktop": {
     "props": {
       "blockClass": "menu-link",
       "paddingTop": 6,
@@ -49,8 +41,7 @@
       "verticalAlign": "middle",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true,
-      "width":"grow"
+      "fullWidth": true
     },
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
