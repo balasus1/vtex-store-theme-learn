@@ -25,8 +25,48 @@
       }
     },
     "blocks": [
-      "vtex.menu@2.x:menu#category-vehicle-accessories"
+      "vtex.menu@2.x:submenu#category-vehicle-accessories"
     ]
+  },
+  "vtex.menu@2.x:submenu#category-vehicle-accessories": {
+    "props": {
+      "orientation": "vertical",
+      "background-color": "black"
+    },
+    "children": [
+      "menu-item#category-apparel-styling",
+      "menu-item#category-interior-storage"
+    ]
+  },
+  "menu-item#category-apparel-styling": {
+    "props": {
+      "id": "menu-item-category-apparel-styling",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Styling & Personalisation",
+        "text": "Styling & Personalisation"
+      }
+    }
+  },
+  "menu-item#category-interior-storage": {
+    "props": {
+      "id": "menu-item-category-interior-storage",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": false,
+        "tagTitle": "Interior Comfort & Storage",
+        "text": "Interior Comfort & Storage"
+      }
+    }
   },
   "menu-item#category-clothing": {
     "props": {
@@ -41,10 +81,7 @@
         "tagTitle": "Clothing",
         "text": "Clothing"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:menu#category-clothing"
-    ]
+    }
   },
   "menu-item#category-lifestyle": {
     "props": {
@@ -59,10 +96,8 @@
         "tagTitle": "Lifestyle",
         "text": "Lifestyle"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:menu#category-lifestyle"
-    ]
+    }
+   
   },
   "menu-item#category-featured-collections": {
     "props": {
@@ -77,10 +112,8 @@
         "tagTitle": "Featured Collections",
         "text": "Featured Collections"
       }
-    },
-    "blocks": [
-      "vtex.menu@2.x:menu#category-featured-collections"
-    ]
+    }
+   
   },
 
   "menu-item#about-us": {
