@@ -1,57 +1,72 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
+      "info-card#demo",
       /* You can make references to blocks defined in other files.
        * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
       "flex-layout.row#deals",
       "__fold__",
-      "rich-text#shelf-title",
+      "flex-layout.row#shelf-product-we-love-texts",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#apparel-collection"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "info-card#demo": {
     "props": {
-      "height": 570,
-      "preload": true,
-      "images": [
-        {
-          "image": "image1.png",
-          "mobileImage": "https://a.storyblok.com/f/231793/1920x873/d998ed0597/desktop-006.jpg"
-        },
-        {
-          "image": "https://a.storyblok.com/f/138163/1920x870/dc896795ee/banner-1920x870px_1.jpg",
-          "mobileImage": "https://a.storyblok.com/f/138163/1920x870/dc896795ee/banner-1920x870px_1.jpg"
-        }
-      ]
-    }
-  },
-  "slider-layout#demo-images": {
-    "props": {
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "carousel"
+      "isFullModeStyle": false,
+      "blockClass": "info-card",
+      "textPosition": "left",
+      "imageUrl": "https://a.storyblok.com/f/138163/1440x360/821cd8ec43/model_cars.jpeg",
+      "subhead": "Elevate your drive with exclusive Mercedes-Benz accessories.<br>Discover luxury and style crafted just for you",
+      "callToActionMode": "button",
+      "callToActionText": "Explore",
+      "callToActionUrl": "/shop",
+      "textAlignment": "center"
     }
   },
 
-  "rich-text#shelf-title": {
+  "flex-layout.row#shelf-product-we-love-texts": {
+    "children": ["flex-layout.col#shelf-product-we-love-text"],
     "props": {
-      "text": "## Summer",
-      "blockClass": "shelfTitle"
+      "blockClass": "shelf-texts-row",
+      "fullWidth": true
     }
   },
-  "flex-layout.row#shelf": {
+ 
+    "flex-layout.col#shelf-product-we-love-text": {
+      "children": [
+        "rich-text#shelf-category-title",
+        "rich-text#shelf-title",
+        "rich-text#shelf-description"
+      ],
+      "props": {
+        "blockClass": "shelf-texts-container",
+        "preventVerticalStretch": true,
+        "rowGap": 0
+      }
+    },
+ 
+    "rich-text#shelf-category-title": {
+      "props": {
+        "text": "##### Lifestyle Collection",
+        "blockClass": "shelfCategoryTitle"
+      }
+    },
+    "rich-text#shelf-title": {
+      "props": {
+        "text": "## Products we love",
+        "blockClass": "shelfTitle"
+      }
+    },
+    "rich-text#shelf-description": {
+      "props": {
+        "text": "#### Travel in luxury. The Mercedes-Benz Collection makes it possible. Shop now online.Products we love",
+        "blockClass": "shelfDescription"
+      }
+    },
+
+    "flex-layout.row#shelf": {
     "children": ["list-context.product-list#demo1"]
   },
   "list-context.product-list#demo1": {
@@ -72,33 +87,6 @@
       "fullWidth": false,
       "blockClass": "shelf"
     }
-  },
-
-  "info-card#home": {
-    "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
-      "textAlignment": "center"
-    }
-  },
-
-  "rich-text#question": {
-    "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
-    }
-  },
-
-  "rich-text#link": {
-    "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
-    }
   }
+  
 }

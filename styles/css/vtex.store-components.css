@@ -9,8 +9,16 @@
 .infoCardContainer--info-card-home {
   max-width: 1520px;
   margin: 0 auto;
-  background-color: #e6f1e6;
+  background-color: #000000;
   padding: 0px;
+}
+
+.infoCardContainer{
+  background-color: #000000;
+}
+
+.infoCardTextContainer{
+  background-color: #000000;
 }
 
 .newsletter {
@@ -110,4 +118,10 @@
 
 .image {
   image-rendering: -webkit-optimize-contrast;
+}
+.img--collections {
+  max-width: 98%;
+}
+.imageElement--collectionForHim {
+ padding-top:108px
 }

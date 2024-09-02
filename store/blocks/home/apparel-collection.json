@@ -1,0 +1,66 @@
+{
+"flex-layout.row#apparel-collection": {
+    "children": [
+      "flex-layout.col#collection1",
+      "flex-layout.col#collection2",
+      "flex-layout.col#collection3"
+    ],
+    "props": {
+      "blockClass": "collections"
+    }
+  },
+
+  "flex-layout.col#collection1": {
+    "children": [
+    "rich-text#collection-title",
+    "image#collection-Apparel-her"
+    ]
+  },
+  "rich-text#collection-title": {
+    "props": {
+      "text": "## Our Collection",
+      "blockClass": "collectionTitle"
+    }
+  },
+  "image#collection-Apparel-her": {
+    "props": {
+      "alt": "Apparel For Her",
+      "src": "https://a.storyblok.com/f/138163/640x800/18b4a23608/catalogue-tiles-640x800px_1.jpg",
+       "blockClass": "collectionForHer"
+    }
+  },
+  "flex-layout.col#collection2": {
+  "children": [
+    "image#collection-Apparel-him"
+    ]
+  },
+  "image#collection-Apparel-him": {
+    "props": {
+      "alt": "Apparel For Him",
+      "src": "https://a.storyblok.com/f/138163/640x800/9ee4c24a88/catalogue-tiles-640x800px_2.jpg",
+       "blockClass": "collectionForHim"
+    }
+  },
+  "flex-layout.col#collection3": {
+    "children": [
+    "image#collection-Accessories",
+    "image#collection-Apparel-kids"
+    ]
+  },
+  "image#collection-Accessories": {
+    "props": {
+      "alt": "Accessories",
+      "src": "https://a.storyblok.com/f/138163/976x244/752ab4bb9d/personal_accs.jpeg",
+       "blockClass": "collectionForAccessories"
+    }
+  },
+  "image#collection-Apparel-kids": {
+    "props": {
+      "alt": "Apparel For Her",
+      "src": "https://a.storyblok.com/f/138163/640x800/13491aaaf1/catalogue-tiles-640x800px_3.jpg",
+       "blockClass": "collectionForKids"
+       
+    }
+  }
+ 
+}

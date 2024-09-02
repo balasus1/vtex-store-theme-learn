@@ -20,7 +20,7 @@
       "preventVerticalStretch": true,
       "fullWidth": true,
       "width":"grow",
-      "backgroundColor":"#000000",
+      "background-color":"black",
       "textColor":"#FFFFFF"
     },
     "children": [
@@ -61,8 +61,8 @@
       "title": "Logo",
       "href": "/",
       "url": "https://accessories.mercedes-benz-mena.com/_ipx/_/mb/mb-claim.svg",
-      "width": "64",
-      "height": "64"
+      "width": "80",
+      "height": "80"
     }
   }
 }

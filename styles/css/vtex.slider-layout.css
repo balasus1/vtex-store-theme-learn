@@ -24,8 +24,18 @@
 }
 
 .slide--shelf {
+  min-height: 550px;
+  margin-top: 20px;
   margin-bottom: 25px;
   padding-left: .5rem;
   padding-right: .5rem;
-  min-height: 550px;
+}
+ 
+.slideChildrenContainer--shelf {
+  width: 35rem;
+  margin:10px;
+  padding: 10px;
+  margin:0 15px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on all sides */
 }

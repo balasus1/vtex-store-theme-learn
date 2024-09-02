@@ -30,14 +30,23 @@
   },
   "vtex.menu@2.x:submenu#category-vehicle-accessories": {
     "props": {
-      "orientation": "vertical",
-      "background-color": "black"
+      "width": "auto"
     },
     "children": [
-      "menu-item#category-apparel-styling",
-      "menu-item#category-interior-storage"
+      "vtex.menu@2.x:menu#apparel-collection"
     ]
   },
+  "vtex.menu@2.x:menu#apparel-collection": {
+    "props": {
+      "orientation": "vertical"
+    }, 
+    "children": [
+      "menu-item#category-apparel-styling",
+      "menu-item#category-interior-storage",
+      "menu-item#category-safety"
+    ]
+  },
+
   "menu-item#category-apparel-styling": {
     "props": {
       "id": "menu-item-category-apparel-styling",
@@ -46,7 +55,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/styling/",
         "noFollow": false,
         "tagTitle": "Styling & Personalisation",
         "text": "Styling & Personalisation"
@@ -61,13 +70,29 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/interior-storage/",
         "noFollow": false,
         "tagTitle": "Interior Comfort & Storage",
         "text": "Interior Comfort & Storage"
       }
     }
   },
+  "menu-item#category-safety": {
+    "props": {
+      "id": "menu-item-category-safety",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/safety/",
+        "noFollow": false,
+        "tagTitle": "Safety",
+        "text": "Safety"
+      }
+    }
+  },
+      
   "menu-item#category-clothing": {
     "props": {
       "id": "menu-item-category-clothing",
@@ -81,6 +106,62 @@
         "tagTitle": "Clothing",
         "text": "Clothing"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-clothing"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-clothing": {
+    "children": [
+      "vtex.menu@2.x:menu#clothing-collection"
+    ]
+  },
+  "vtex.menu@2.x:menu#clothing-collection": {
+    "props": {
+      "items": [
+        {
+          "id": "menu-item-clothing-men-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 153,
+            "type": "internal",
+            "href": "/men/",
+            "noFollow": true,
+            "tagTitle": "Men's Clothing",
+            "text": "Men's Clothing"
+          }
+        },
+        {
+          "id": "menu-item-clothing-women-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 151,
+            "type": "internal",
+            "href": "/women/",
+            "noFollow": true,
+            "tagTitle": "Women's Clothing",
+            "text": "Women's Clothing"
+          }
+        },
+        {
+          "id": "menu-item-clothing-all-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 152,
+            "type": "internal",
+            "href": "/safety/",
+            "noFollow": true,
+            "tagTitle": "View All Clothing",
+            "text": "View All Clothing"
+          }
+        }
+      ]
     }
   },
   "menu-item#category-lifestyle": {
@@ -114,51 +195,5 @@
       }
     }
    
-  },
-
-  "menu-item#about-us": {
-    "props": {
-      "id": "menu-item-about-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/about-us",
-        "noFollow": true,
-        "tagTitle": "About us",
-        "text": "About us"
-      }
-    }
-  },
-  "menu-item#faq": {
-    "props": {
-      "id": "menu-item-faq",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/faq",
-        "noFollow": true,
-        "tagTitle": "FAQ",
-        "text": "FAQ"
-      }
-    }
-  },
-  "menu-item#contact-us": {
-    "props": {
-      "id": "menu-item-contact-us",
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/contact-us",
-        "noFollow": true,
-        "tagTitle": "Contact Us",
-        "text": "Contact Us"
-      }
-    }
   }
 }
