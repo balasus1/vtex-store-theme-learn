@@ -25,6 +25,7 @@
   "flex-layout.col#text-deal1": {
     "children": ["rich-text#deal-title1", "rich-text#deal-content1"],
     "props": {
+      "width": "25%",
       "preventVerticalStretch": true
     }
   },
@@ -52,6 +53,7 @@
   "flex-layout.col#text-deal2": {
     "children": ["rich-text#deal-title2", "rich-text#deal-content2"],
     "props": {
+      "width": "25%",
       "preventVerticalStretch": true
     }
   },
@@ -83,6 +85,7 @@
   "flex-layout.col#text-deal3": {
     "children": ["rich-text#deal-title3", "rich-text#deal-content3"],
     "props": {
+      "width": "25%",
       "preventVerticalStretch": true
     }
   },
@@ -114,6 +117,7 @@
   "flex-layout.col#text-deal4": {
     "children": ["rich-text#deal-title4", "rich-text#deal-content4"],
     "props": {
+      "width": "25%",
       "preventVerticalStretch": true
     }
   },

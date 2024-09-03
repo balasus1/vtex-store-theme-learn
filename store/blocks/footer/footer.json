@@ -43,7 +43,7 @@
  "rich-text#contact-us-content": {
     "props": {
       "text": " Gargash Enterprises L.L.C Authorized General Distributor of Mercedes-Benz in Dubai, Sharjah and Northern Emirates Al Ittihad Street",
-      "blockClass": "contact-us-title"
+      "blockClass": "contact-us-content"
     }
   },
   "rich-text#contact-us-mail": {
@@ -96,33 +96,27 @@
     "props": {
       "socialNetworks": [
         {
-          "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/",
-          "showInColor": true
+          "name": "facebook",
+          "url": "https://www.facebook.com/vtexonline/"
         },
         {
-          "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/",
-          "showInColor": true
+          "name": "instagram",
+          "url": "https://www.instagram.com/vtextruecloud/"
         },
         {
-          "name": "Twitter",
-          "url": "https://twitter.com/vtexonline",
-          "showInColor": true
+          "name": "twitter",
+          "url": "https://twitter.com/vtexonline"
         },
         {
-          "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV",
-          "showInColor": true
+          "name": "youtube",
+          "url": "https://www.youtube.com/user/VTEXTV"
         }
       ]
     }
   },
   "flex-layout.row#legal-docs": {
-    "children": ["flex-layout.col#copyright",  
-                  "flex-layout.col#privacy-policy1", 
-                  "flex-layout.col#privacy-policy2", 
-                  "flex-layout.col#privacy-policy3"],
+    "children": ["flex-layout.col#copyright",
+                 "flex-layout.row#privacy-policy-container"],
     "props": {
       "blockClass": "legal-docs",
       "width" : "grow"
@@ -141,6 +135,12 @@
     "props": {
       "width" : "grow"
     }
+  },
+
+  "flex-layout.row#privacy-policy-container" :{
+    "children": ["flex-layout.col#privacy-policy1",
+                 "flex-layout.col#privacy-policy2",
+                 "flex-layout.col#privacy-policy3"] 
   },
   "flex-layout.col#privacy-policy1" :{
     "children": ["rich-text#privacy-policy1"]
