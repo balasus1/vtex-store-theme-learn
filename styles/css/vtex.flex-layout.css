@@ -100,3 +100,21 @@
 .flexRow--addToCartRow {
   padding-bottom: 1rem;
 }
+
+.flexRow--color-tone1 {
+  height: 100px;
+  width: 100%;
+  overflow: hidden;
+  background: linear-gradient(to right bottom, #000000 50%, #767678 50.5%);
+}
+
+.flexRow--color-tone2 {
+  width: 0;
+  height: 0;
+  border-top: 100px solid gray;
+  border-right: 100px solid transparent;
+}
+
+.flexRow--footer-content,.flexRow--legal-docs {
+  background-color: #767678;
+}

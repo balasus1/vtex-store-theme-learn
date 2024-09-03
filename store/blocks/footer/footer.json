@@ -2,77 +2,176 @@
   "footer": {
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
-  "footer-layout.desktop": {
+  "footer-layout.desktop": {  
     "children": [
-      "flex-layout.row#footer-1-desktop",
-      "flex-layout.row#footer-2-desktop",
-      "flex-layout.row#footer-3-desktop"
+      "flex-layout.row#color-tone",
+      "flex-layout.row#footer-content",
+      "flex-layout.row#legal-docs"
     ]
   },
-  "flex-layout.row#footer-1-desktop": {
-    "children": [
-      "vtex.menu@2.x:menu#Products",
-      "vtex.menu@2.x:menu#footer-clothing",
-      "vtex.menu@2.x:menu#footer-decoration",
-      "vtex.menu@2.x:menu#footer-bags",
-      "footer-spacer",
-      "social-networks"
-    ],
+  "flex-layout.row#color-tone": {
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "color-tone1"
     }
   },
 
+  "flex-layout.row#footer-content": {
+    "children": ["rich-text#content-footer",
+                 "flex-layout.col#contact-us",
+                 "flex-layout.col#reach-us"],
+    "props": {
+      "blockClass": "footer-content"
+    }
+  },
+  "rich-text#content-footer": {
+    "props": {
+      "text": "MERCEDES-BENZ",
+      "font-size": 30
+    }
+  },
+ "flex-layout.col#contact-us":{
+    "children": ["rich-text#contact-us-title", 
+    "rich-text#contact-us-content",
+    "rich-text#contact-us-mail"]
+  },
+  "rich-text#contact-us-title": {
+    "props": {
+      "text": "Contact Us",
+      "blockClass": "contact-us-title"
+    }
+  },
+ "rich-text#contact-us-content": {
+    "props": {
+      "text": " Gargash Enterprises L.L.C Authorized General Distributor of Mercedes-Benz in Dubai, Sharjah and Northern Emirates Al Ittihad Street",
+      "blockClass": "contact-us-title"
+    }
+  },
+  "rich-text#contact-us-mail": {
+    "props": {
+      "text": "support@mercedesbenz.com",
+      "blockClass": "contact-us-mail"
+    }
+  },
+  "flex-layout.col#reach-us":{
+    "children": ["rich-text#reach-us-title",
+                  "rich-text#reach-us-location", 
+                  "rich-text#reach-us-contact",
+                  "rich-text#reach-us-follow",
+                  "social-networks"]
+  },
+  "rich-text#reach-us-title": {
+    "props": {
+      "text": "Reach us here",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "contact-us-title"
+    }
+  },
+  "rich-text#reach-us-location": {
+    "props": {
+      "text": "Our Locations",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "reach-us-location"
+    }
+  },
+  "rich-text#reach-us-contact": {
+    "props": {
+      "text": "Contact Us",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "reach-us-contact"
+    }
+  },
+  "rich-text#reach-us-follow": {
+    "props": {
+      "text": "Follow Us",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "reach-us-follow"
+    }
+  },
+  
   "social-networks": {
     "props": {
       "socialNetworks": [
         {
           "name": "Facebook",
-          "url": "https://www.facebook.com/vtexonline/"
+          "url": "https://www.facebook.com/vtexonline/",
+          "showInColor": true
         },
         {
           "name": "Instagram",
-          "url": "https://www.instagram.com/vtextruecloud/"
+          "url": "https://www.instagram.com/vtextruecloud/",
+          "showInColor": true
         },
         {
           "name": "Twitter",
-          "url": "https://twitter.com/vtexonline"
+          "url": "https://twitter.com/vtexonline",
+          "showInColor": true
         },
         {
           "name": "Youtube",
-          "url": "https://www.youtube.com/user/VTEXTV"
+          "url": "https://www.youtube.com/user/VTEXTV",
+          "showInColor": true
         }
       ]
     }
   },
+  "flex-layout.row#legal-docs": {
+    "children": ["flex-layout.col#copyright",  
+                  "flex-layout.col#privacy-policy1", 
+                  "flex-layout.col#privacy-policy2", 
+                  "flex-layout.col#privacy-policy3"],
+    "props": {
+      "blockClass": "legal-docs",
+      "width" : "grow"
+    }
+  },
+  "flex-layout.col#copyright" :{
+    "children": ["rich-text#copyright", "flex-layout.col#spacer"]
+  },
+  "rich-text#copyright": {
+    "props": {
+      "text": "© 2019 VTEX. All Rights Reserved.",
+      "blockClass": "copyright"
+    }
+  },
+  "flex-layout.col#spacer" :{
+    "props": {
+      "width" : "grow"
+    }
+  },
+  "flex-layout.col#privacy-policy1" :{
+    "children": ["rich-text#privacy-policy1"]
+  },
+  "flex-layout.col#privacy-policy2" :{
+    "children": ["rich-text#privacy-policy2"]
 
-  "flex-layout.row#footer-2-desktop": {
-    "children": ["accepted-payment-methods"],
+  },
+  "flex-layout.col#privacy-policy3" :{
+    "children": ["rich-text#privacy-policy3"]
+  },
+  
+  "rich-text#privacy-policy1": {
     "props": {
-      "blockClass": "payment-methods"
+      "text": "Privacy Policy",
+      "justify-content":"end",
+      "blockClass": "privacy-policy1"
     }
   },
-  "accepted-payment-methods": {
+  "rich-text#privacy-policy2": {
     "props": {
-      "paymentMethods": ["MasterCard", "Visa", "Diners Club"]
+      "text": "Privacy Policy",
+      "blockClass": "privacy-policy2"
     }
   },
-
-  "flex-layout.row#footer-3-desktop": {
-    "children": ["rich-text#footer"],
+  "rich-text#privacy-policy3": {
     "props": {
-      "blockClass": "credits"
+      "text": "Privacy Policy",
+      "blockClass": "privacy-policy3"
     }
   },
-  "rich-text#footer": {
-    "props": {
-      "text": "All stock and product photos are from photos.icons8.com",
-      "blockClass": "footer"
-    }
-  },
-
   "footer-layout.mobile": {
     "children": [
       "flex-layout.row#1-footer-mobile",

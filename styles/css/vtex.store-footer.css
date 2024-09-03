@@ -9,3 +9,7 @@
 .row--payment-methods {
   padding-top: 16px;
 }
+
+.socialNetworkImage--Facebook,.socialNetworkImage--Instagram,.socialNetworkImage--Twitter,.socialNetworkImage--Youtube {
+  background-color: #ffffff
+}

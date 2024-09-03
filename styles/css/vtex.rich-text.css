@@ -100,6 +100,33 @@
   }
   .headingLevel3--deals{
     font-size: 10px;
-
+  }
+  .headingLevel4--shelfDescription{
+    margin-left: 5rem;
+    width: 50%;
+    text-wrap: wrap;
+  }
+  .headingLevel5--shelfCategoryTitle{
+    margin-left: 5rem;
+  }
+  .paragraph--privacy-policy1{
+    padding-left:21px;
+  }
+  .paragraph--privacy-policy2{
+    padding-left:15px;
+  }
+  .paragraph--privacy-policy3{
+    padding-right:45px;
+  }
+  .container{
+    color: #ffffff;
+  }
+  .container--reach-us-location,.container--reach-us-contact{
+    height: 35px;
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    border: 2.5px solid #ffffff;
+    padding: 5px;
   }
 }

@@ -38,7 +38,8 @@
   },
   "vtex.menu@2.x:menu#apparel-collection": {
     "props": {
-      "orientation": "vertical"
+      "orientation": "vertical",
+      "blackClass": "apparel-collection"
     }, 
     "children": [
       "menu-item#category-apparel-styling",
