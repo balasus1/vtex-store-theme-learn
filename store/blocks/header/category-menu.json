@@ -50,7 +50,7 @@
 
   "menu-item#category-apparel-styling": {
     "props": {
-      "id": "menu-item-category-apparel-styling",
+      "blackClass":"category-apparel-styling",
       "type": "custom",
       "iconId": null,
       "highlight": false,
@@ -113,12 +113,16 @@
     ]
   },
   "vtex.menu@2.x:submenu#category-clothing": {
+    "props": {
+      "width": "auto"
+    },
     "children": [
       "vtex.menu@2.x:menu#clothing-collection"
     ]
   },
   "vtex.menu@2.x:menu#clothing-collection": {
     "props": {
+      "orientation": "vertical",
       "items": [
         {
           "id": "menu-item-clothing-men-style",
@@ -175,11 +179,70 @@
         "type": "internal",
         "href": "/lifestyle/",
         "noFollow": false,
-        "tagTitle": "Lifestyle",
-        "text": "Lifestyle"
+        "tagTitle": "Lifestyle & Collection",
+        "text": "Lifestyle & Collection"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#category-lifestyle"
+    ]
+  },
+  "vtex.menu@2.x:submenu#category-lifestyle": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#lifestyle-collection"
+    ]
+  },
+  "vtex.menu@2.x:menu#lifestyle-collection": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-clothing-men-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 153,
+            "type": "internal",
+            "href": "/men/",
+            "noFollow": true,
+            "tagTitle": "Shop",
+            "text": "Shop"
+          }
+        },
+        {
+          "id": "menu-item-clothing-women-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 151,
+            "type": "internal",
+            "href": "/women/",
+            "noFollow": true,
+            "tagTitle": "shoes",
+            "text": "Shoes"
+          }
+        },
+        {
+          "id": "menu-item-clothing-all-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 152,
+            "type": "internal",
+            "href": "/safety/",
+            "noFollow": true,
+            "tagTitle": "Caps & Hats",
+            "text": "Caps & Hats"
+          }
+        }
+      ]
     }
-   
   },
   "menu-item#category-featured-collections": {
     "props": {
@@ -194,7 +257,52 @@
         "tagTitle": "Featured Collections",
         "text": "Featured Collections"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#featured-collections"
+    ] 
+  },
+  "vtex.menu@2.x:submenu#featured-collections": {
+    "props": {
+      "width": "auto"
+    },
+    "children": [
+      "vtex.menu@2.x:menu#featured-collection"
+    ]
+  },
+  "vtex.menu@2.x:menu#featured-collection": {
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item-clothing-men-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 153,
+            "type": "internal",
+            "href": "/men/",
+            "noFollow": true,
+            "tagTitle": "Motorsports Collection",
+            "text": "Motorsports Collection"
+          }
+        },
+        {
+          "id": "menu-item-clothing-women-style",
+          "type": "custom",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "categoryId": 151,
+            "type": "internal",
+            "href": "/women/",
+            "noFollow": true,
+            "tagTitle": "Summer Collection",
+            "text": "Summer Collection"
+          }
+        }
+      ]
     }
-   
   }
 }

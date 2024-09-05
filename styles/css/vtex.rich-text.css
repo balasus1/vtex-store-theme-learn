@@ -15,10 +15,14 @@
   font-weight: 300;
   font-family: mb-title, serif;
   letter-spacing: 0.02em;
-  margin-left:5rem;
+  margin-left:-39rem;
   margin-top:10px;
   margin-bottom:0px;
   color: black;
+}
+
+.headingLevel2--collectionTitle{
+  color: #ffffff;
 }
 
 .container--deals .paragraph {
@@ -143,7 +147,7 @@
     padding: 5px;
   }
 }
-.paragraph--content--footer,
+.paragraph--content-footer,
 .paragraph--contact-us-title,.paragraph--contact-us-content,
 .paragraph--reach-us-location,
 .paragraph--reach-us-contact,.paragraph--reach-us-follow,.paragraph--copyright,.paragraph--privacy-policy1,.paragraph--privacy-policy2,.paragraph--privacy-policy3{

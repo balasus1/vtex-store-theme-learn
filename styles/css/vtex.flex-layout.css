@@ -1,14 +1,14 @@
-.flexRowContent--menu-link,
+
 .flexRowContent--main-header {
   padding: 0 0.5rem;
-  background-color: #000000;
+ 
 }
 
 @media screen and (min-width: 40em) {
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 1rem;
-    background-color: #000000;
+   
   }
 }
 
@@ -16,12 +16,13 @@
   .flexRowContent--menu-link,
   .flexRowContent--main-header {
     padding: 0 0.25rem;
-    background-color: #000000;
+   
   }
 }
 
 .flexRowContent--menu-link {
-  background-color: #03044e;
+  background-color: #ffffff;
+  color: #000000;
   
 }
 
@@ -36,7 +37,7 @@
 }
 
 .flexRowContent--menu-link :global(.vtex-menu-2-x-styledLink) {
-  color: #ffffff;
+  color: #000;
   font-size: 14px;
 }
 
@@ -118,4 +119,8 @@
 .flexRow--footer-content,.flexRow--legal-docs {
   background-color: #5c5c5d;
   color: #ffffff;
+}
+
+.flexRow--collections{
+  background-color: #000000;
 }
